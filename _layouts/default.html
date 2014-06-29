@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    
+    {% if page.description %}
+    <meta name="description" content="{{ page.description }}">
+    {% endif %}
+    
+    <link href='http://fonts.googleapis.com/css?family=Mrs+Saint+Delafield' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=EB+Garamond' rel='stylesheet' type='text/css'>
+    
+    <link rel="stylesheet" href="/style-2.css" type="text/css" charset="utf-8">
+    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        
+    {% if page.slideshow %}
+    <script type="text/javascript" src="/js/slideshow.js"></script>
+    {% endif %}
+    
+    <script type="text/javascript" src="/js/rotate-text.js"></script>
+    
+    <title>{{ page.title }}</title>
+    
+    {% include google-analytics.html %}
+    
+  </head>
+  
+  <body>
+    
+    <div id="wrapper">
+            
+      <div id="topbar">
+        <div id="title">
+          Waterside
+        </div>
+
+        <div id="subtitle">
+          Landscape Contractor &#x25c7; Concept, Design, Installation
+        </div>
+
+        <div id="menu">
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/bioengineering/">Bioengineering</a></li>
+            <li><a href="/design/">Design</a></li>
+            <li><a href="/gallery/">Gallery</a></li>
+            <li><a class="last-link" href="/contact/">Contact</a></li>
+          </ul>
+        </div>
+        
+      </div>
+      <div class="clear"></div>
+            
+      <!-- contains content and footer -->
+      <div id="main">
+        
+        {{ content }}
+            
+        <div class="clear"></div>
+        
+        <div id="footer">
+          
+          <div id="social">
+            {% include social.html %}
+          </div>
+          
+          <div id="credit">This website was created by<br /><a href="http://jmv.me/" target="_blank">Julia Van Cleve</a>
+          </div>
+          
+        </div>
+        
+        <div class="clear"></div>
+        
+      
+      </div>
+      
+    </div>    
+    
+  </body>
+</html>
+
+      
+      

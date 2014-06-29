@@ -1,0 +1,9 @@
+  <div id="header" class="slideshow" data-showduration="10s" data-fadeduration="1s">
+      {% for image in page.images %}
+        {% if forloop.first %}
+          <img src="{{ image }}" />
+        {% else %}
+          <img data-slidesrc="{{ image }}" />
+        {% endif %}
+      {% endfor %}
+  </div>

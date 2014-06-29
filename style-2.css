@@ -1,0 +1,306 @@
+@import url('/webfonts/socicon.css');
+
+body, html {
+  background-color:rgb(245,245,245);
+  margin:0;
+  padding:0;
+  font-family: 'EB Garamond', serif;
+  color:#696969;
+}
+
+ul {
+  padding-left:20px;
+}
+
+li {
+  list-style-type:none;
+}
+
+div.featured ul li:before, div.contactbox ul li:before {
+  content:'\25C7';
+  margin-right:10px;
+}
+
+div.featured ul ul li, div.contactbox ul ul li {
+  list-style-type:none;
+  margin-left:12px;
+}
+
+div.featured ul ul li:before, div.contactbox ul ul li:before {
+  content:'';
+  margin-right:0;
+}
+
+div.featured ul li.quote:before {
+  list-style-type:none;
+  content:'';
+  margin-right:0;
+}
+
+.credit {
+  font-size:10pt;
+  font-style:italic;
+  padding-bottom:10px;
+}
+
+a {
+  text-decoration:none;
+  color:gray;
+}
+
+.clear {
+  clear:both;
+}
+
+#topbar {
+  display:block;
+  width:980px;
+  height:120px;
+  padding-bottom:20px;  
+}
+
+#title {
+  display:block;
+  margin:0px auto;
+  margin-top:10px;
+  margin-bottom:10px;
+  margin-left:20px;
+  height:95px;
+  font-family: 'Mrs Saint Delafield', cursive;
+  font-size:75pt;
+  font-weight:bold;
+  color:#d3d3d3;
+  text-shadow: 0 1px 1px white; 
+}
+
+#subtitle {
+  display:block;
+  margin-left:20px;
+  float:left;
+  padding-top:2px;
+  font-variant:small-caps;
+  letter-spacing:1px;
+}
+
+#menu li {
+  display:inline-block;
+  list-style-type:none;
+  text-align:center;
+  border-radius:5px;
+  font-variant:small-caps;
+  letter-spacing:1px;
+}
+
+#menu a {
+  display:block;
+  padding-left:10px;
+  padding-right:10px;
+}
+
+a:hover {
+  color:rgb(185,136,96);
+}
+
+#menu ul {
+  padding:0;
+  margin:0;
+  text-align:center;
+}
+
+#menu {
+  display:inline;
+  margin-top:2px;
+  float:right;
+}
+
+#page-title {
+  font-family: 'EB Garamond', serif;
+  font-variant:small-caps;
+  font-size:15pt;
+  border-bottom:1px solid #d3d3d3;
+  padding-top:2px;
+  margin-bottom:15px;
+  letter-spacing:1px;
+}
+
+.page-subtitle {
+  font-family: 'EB Garamond', serif;
+  font-variant:small-caps;
+  font-size:12pt;
+  text-align:center;
+  border-bottom:1px solid #d3d3d3;
+  letter-spacing:1px;
+}
+
+#header {
+  display:block;
+  height:450px;
+  min-width:980px;
+  overflow:hidden;
+  position:absolute;
+  right:0;
+  left:0;
+  border-bottom:1px solid #d3d3d3;
+  border-top:1px solid #d3d3d3;
+}
+
+#header img {
+  position:absolute;
+  min-height:450px;
+  min-width:100%;
+  overflow:hidden;  
+}
+
+#content {
+  padding:20px;
+  min-height:200px;
+  padding-top:460px;
+}
+
+#content.noslideshow {
+  padding-top:8px;
+  border-top:1px solid #d3d3d3;
+}
+
+img.icon {
+  margin-top:5px;
+  height:19px;
+  width:30px;
+  padding-right:5px;
+}
+
+.contactbox {
+  border:1px solid #d3d3d3;
+  padding:14px;
+  margin-bottom:20px;
+  box-shadow:0px 0px 5px #d3d3d3;
+  background-color:#f9f9f9;
+}
+
+.featured {
+  display:inline-block;
+  border:1px solid #d3d3d3;
+  width:258px;
+  padding:20px;
+  vertical-align:top;
+  box-shadow:0px 0px 5px #d3d3d3;
+  background-color:#f9f9f9;
+}
+
+.featured.child-item {
+  margin-left:15px;
+  min-height:320px;
+  position:relative;
+}
+
+.featured.child-item p {
+  position:absolute;
+  bottom:0;
+  padding-bottom:15px;
+}
+
+.align-left {
+  float:left;
+  width:568px;
+}
+
+#form {
+  display:block;
+  float:right;
+  margin-bottom:20px;
+  border:1px solid #d3d3d3;
+  box-shadow:0px 0px 5px #d3d3d3;
+  background-color:#f9f9f9;
+  padding:12px;
+}
+
+textarea {
+  width:320px;
+  resize: vertical;
+}
+
+div.caption-image {
+  display:inline-block;
+  border:1px solid #d3d3d3;
+  width:258px;
+  padding:20px;
+  vertical-align:top;
+  box-shadow:0px 0px 5px #d3d3d3;
+  margin-bottom:20px;
+  text-align:center;
+  background-color:#f9f9f9;
+}
+
+.caption-image.child-item {
+  margin-left:15px;
+}
+
+img.caption-image {
+  width:100%;
+}
+
+img.profile {
+  float:left;
+  width:260px;
+  box-shadow:0px 0px 5px #d3d3d3;
+  margin-right:14px;
+}
+
+img.bottom {
+  margin-top:15px;
+}
+
+img.small {
+  height:50px;
+  opacity:0.5;
+  filter:alpha(opacity=50);
+}
+
+img.small:hover {
+  opacity:1;
+  filter:alpha(opacity=100);
+}
+
+#wrapper {
+  display:block;
+  width:980px;
+  margin:0px auto;
+  margin-bottom:12px;
+}
+
+#main {
+  display:block;
+  margin:0px auto;
+  width:980px;
+}
+
+p {
+  margin-bottom:9px;
+  line-height:24px;
+}
+
+#footer {
+  border-top:1px solid #d3d3d3;
+  padding:15px;
+}
+
+#social {
+  float:left;
+}
+
+#social li, #social ul {
+  list-style-type:none;
+  display:inline;
+  padding-left:0px;
+}
+
+#credit {
+  float:right;
+  padding-bottom:12px;
+  text-align:right;
+}
+
+#sv-container {
+  margin-left:auto;
+  margin-right:auto;
+}
