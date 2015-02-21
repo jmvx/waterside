@@ -35,7 +35,7 @@ function jmvxApplySlideshow(target) {
   // After all images are loaded, we can set up the CSS to animate
   target.on('onLoadComplete', function () {
     var target = $(this);
-    var imgs = $('img', target);
+    var imgs = $('.slide', target);
     var n = imgs.length;
     var a = parseInt(target.data('showduration'));
     var b = parseInt(target.data('fadeduration'));
@@ -71,6 +71,9 @@ function jmvxApplySlideshow(target) {
       keyframes += '}\n\n';
     });
     target.append($('<style type="text/css">' + keyframes + '</style>'));
+    
+    // Make every image visible now
+    imgs.removeClass('hidden-slide');
   });
   
   // Load each image, decrementing the counter as they load, and then trigger
