@@ -55,7 +55,7 @@ a {
 #topbar {
   display:block;
   width:980px;
-  height:120px;
+  height:160px;
   padding-bottom:20px;  
 }
 
@@ -76,7 +76,6 @@ a {
 #subtitle {
   display:block;
   margin-left:20px;
-  float:left;
   padding-top:2px;
   font-variant:small-caps;
   letter-spacing:1px;
@@ -93,8 +92,8 @@ a {
 
 #menu a {
   display:block;
-  padding-left:10px;
-  padding-right:10px;
+  padding-left:30px;
+  padding-right:30px;
 }
 
 a:hover {
@@ -108,9 +107,8 @@ a:hover {
 }
 
 #menu {
-  display:inline;
-  margin-top:2px;
-  float:right;
+  display:block;
+  margin-top:20px;
 }
 
 #page-title {
