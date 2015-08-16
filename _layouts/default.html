@@ -5,19 +5,20 @@
     {% if page.description %}
     <meta name="description" content="{{ page.description }}">
     {% endif %}
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     
     <link href='http://fonts.googleapis.com/css?family=Mrs+Saint+Delafield' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=EB+Garamond' rel='stylesheet' type='text/css'>
-    
     <link rel="stylesheet" href="/style.css" type="text/css" charset="utf-8">
     
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         
     {% if page.slideshow %}
     <script type="text/javascript" src="/js/slideshow.js"></script>
     {% endif %}
-    
     <script type="text/javascript" src="/js/rotate-text.js"></script>
+    <script src="/lightbox/js/lightbox.min.js"></script>
+    <link href="/lightbox/css/lightbox.css" rel="stylesheet" />
     
     <title>{{ page.title }}</title>
     
@@ -41,9 +42,9 @@
         <div id="menu">
           <ul>
             <li><a href="/">Home</a></li>
-            <li><a href="/bioengineering/">Bioengineering</a></li>
             <li><a href="/design/">Design</a></li>
             <li><a href="/gallery/">Gallery</a></li>
+            <li><a href="/bioengineering/">Bioengineering</a></li>
             <li><a class="last-link" href="/contact/">Contact</a></li>
           </ul>
         </div>
