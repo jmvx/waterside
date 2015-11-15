@@ -45,7 +45,7 @@ div.featured ul li.quote:before {
 
 a {
   text-decoration:none;
-  color:gray;
+  color:rgb(185,136,96);
 }
 
 .clear {
@@ -97,7 +97,7 @@ a {
 }
 
 a:hover {
-  color:rgb(185,136,96);
+  color:black;
 }
 
 #menu ul {
@@ -254,9 +254,19 @@ img.bottom {
 
 img.small {
   height:50px;
-  opacity:0.5;
+  opacity:0.5;*/
   filter:alpha(opacity=50);
+  margin-left: 30px;
 }
+
+img.small:first-child {
+  margin-left:160px;
+}
+
+img.small:last-child {
+  margin-left:10px;
+}
+
 
 img.small:hover {
   opacity:1;
@@ -292,8 +302,10 @@ p {
 
 #social li, #social ul {
   list-style-type:none;
-  display:inline;
+  display:inline-block;
   padding-left:0px;
+  vertical-align:top;
+  margin-top:0px;
 }
 
 #credit {
@@ -339,4 +351,8 @@ h1.album {
   margin-bottom:15px;
   letter-spacing:1px;
   font-weight:normal;
+}
+
+#loading {
+  text-align:center;
 }
