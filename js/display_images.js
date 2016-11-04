@@ -7,7 +7,7 @@ $(document).ready(function() {
       for (i in result) {
         album_title = result[i].album.title;
         // Do not display "hidden" categories
-        if (album_title != "Uncategorized" && album_title != "uncategorized" && album_title != "null") {
+        if (album_title != "Uncategorized" && album_title != "uncategorized" && album_title != "null" && album_title != "Building") {
           photo_title = result[i].title;
           photo_location = result[i].image.image.resized.url;
           thumb_location = result[i].image.image.small_thumb.url;
