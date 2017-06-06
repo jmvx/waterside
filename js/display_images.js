@@ -9,8 +9,8 @@ $(document).ready(function() {
         // Do not display "hidden" categories
         if (album_title != "Uncategorized" && album_title != "uncategorized" && album_title != "null" && album_title != "Building") {
           photo_title = result[i].title;
-          photo_location = result[i].image.image.resized.url;
-          thumb_location = result[i].image.image.small_thumb.url;
+          photo_location = result[i].image.resized.url;
+          thumb_location = result[i].image.small_thumb.url;
           var album_title_formatted = album_title.toLowerCase().split(' ').join('_');
           if (document.getElementById(album_title_formatted) == undefined) {
             var new_album = $("<div>", {id: album_title_formatted, class: "album"});
