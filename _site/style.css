@@ -52,8 +52,9 @@ a {
 
 #topbar {
   display:block;
-  width:980px;
-  height:160px;
+/*  width:980px;
+*/  
+ /*height:160px;*/
   padding-bottom:20px;  
 }
 
@@ -77,6 +78,7 @@ a {
   padding-top:2px;
   font-variant:small-caps;
   letter-spacing:1px;
+  margin-bottom:30px;
 }
 
 #menu li {
@@ -92,6 +94,7 @@ a {
   display:block;
   padding-left:30px;
   padding-right:30px;
+  margin-bottom:8px;
 }
 
 a:hover {
@@ -131,8 +134,8 @@ a:hover {
 #header {
   display:block;
   height:450px;
-  min-width:980px;
-  overflow:hidden;
+/*  min-width:980px;
+*/  overflow:hidden;
   position:absolute;
   right:0;
   left:0;
@@ -199,11 +202,6 @@ img.icon {
   padding-bottom:15px;
 }
 
-.align-left {
-  float:left;
-  width:568px;
-}
-
 #form {
   display:block;
   float:right;
@@ -217,6 +215,26 @@ img.icon {
 textarea {
   width:320px;
   resize: vertical;
+}
+
+.design-gallery {
+  margin-left:auto;
+  margin-right:auto;
+  text-align:center;
+  margin-top:30px;
+}
+
+.first {
+  margin-right:10px;
+}
+
+.center-align {
+  display:block;
+  width:50%;
+}
+
+.last {
+  margin-left:10px;
 }
 
 div.caption-image {
@@ -252,17 +270,18 @@ img.bottom {
 
 img.small {
   height:50px;
-  opacity:0.5;*/
+  opacity:0.5;
   filter:alpha(opacity=50);
   margin-left: 30px;
 }
 
 img.small:first-child {
-  margin-left:160px;
+  margin-left:205px;
+  margin-right:22px;
 }
 
 img.small:last-child {
-  margin-left:10px;
+  margin-left:20px;
 }
 
 
@@ -282,6 +301,7 @@ img.small:hover {
   display:block;
   margin:0px auto;
   width:980px;
+
 }
 
 p {
